@@ -2756,3 +2756,12 @@ keywords = [
     "zendesk",
 ]
 
+[[rules]]
+description = "MongoDB Connection String"
+id = "mongodb-connection-str"
+regex = '''(?i)(?:mongodb:)(?://[^/\s:]{3,20})([^/\s]{0,20})(?:@.{1,100})'''
+secretGroup = 1
+keywords = [
+    "mongodb",
+    "database",
+]
